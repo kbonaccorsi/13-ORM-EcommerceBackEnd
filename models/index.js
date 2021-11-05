@@ -14,7 +14,7 @@ Product.hasMany(Tag, {
   onDelete: 'CASCADE'
 });
 
-Tag.hasMany(Product, {
+Tag.belongsTo(Product, {
   foreignKey: 'tag_id',
   onDelete: 'CASCADE'
 });
